@@ -58,6 +58,11 @@
                                         <constraint firstItem="aqr-Zj-3hp" firstAttribute="top" secondItem="6xl-b3-cQ8" secondAttribute="topMargin" id="g1e-aq-ZjY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="birthYearLabel" destination="5qF-ru-gKz" id="fRG-2C-FSi"/>
+                                    <outlet property="genderLabel" destination="e3W-3r-Lze" id="Vsw-Dt-lsa"/>
+                                    <outlet property="nameLabel" destination="TJ4-NC-dee" id="XFw-BL-FbC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
