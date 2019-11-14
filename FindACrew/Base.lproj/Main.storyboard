@@ -9,7 +9,7 @@
         <!--Find A Crew-->
         <scene sceneID="bkN-sp-qfT">
             <objects>
-                <tableViewController id="8QK-TO-ai9" sceneMemberID="viewController">
+                <tableViewController id="8QK-TO-ai9" customClass="PersonSearchTableViewController" customModule="FindACrew" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n2K-VA-C5f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GkE-L0-e1l">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GkE-L0-e1l" customClass="PersonTableViewCell" customModule="FindACrew" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GkE-L0-e1l" id="6xl-b3-cQ8">
@@ -66,6 +66,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Find A Crew" id="2fh-cM-44H"/>
+                    <connections>
+                        <outlet property="searchBar" destination="HZH-5c-iaC" id="2jR-ID-f3S"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5z-FW-R7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
