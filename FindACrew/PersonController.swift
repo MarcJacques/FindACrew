@@ -53,11 +53,13 @@ class PersonController {
             }
             
             let jsonDecoder = JSONDecoder()
+            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
             do {
                 let personSearch = try jsonDecoder.decode(PersonSearch.self, from: data)
+                
                 self.people.append(contentsOf: personSearch.results)
             } catch {
-                print("unable to decode data into object of type [Person]: \(error)")
+                print("Unable to decode data into object of type [Person]: \(error)")
             }
             completion()
         }.resume()
