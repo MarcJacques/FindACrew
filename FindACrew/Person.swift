@@ -15,3 +15,7 @@ struct Person: Codable {
     let birthYear: String
     
 }
+
+struct PersonSearch: Codable {
+    let results: [Person]
+}
